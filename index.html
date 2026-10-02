@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koome Onesmus — Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Koome Onesmus — full-stack developer. Projects, blog and contact.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%237c3aed'/><stop offset='1' stop-color='%2306b6d4'/></linearGradient></defs><rect width='100' height='100' rx='22' fill='url(%23g)'/><text x='50' y='68' font-size='52' font-family='monospace' font-weight='bold' text-anchor='middle' fill='white'>K</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <div class="bg-decor">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">koome<span>.dev</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <span class="hero-badge">// hello, world — meet Koome</span>
+        <h1>Hi, I'm <span class="gradient-text">Koome Onesmus</span>.</h1>
+        <h2 class="type-line">I <span id="typewriter" class="gradient-text"></span><span class="cursor">_</span></h2>
+        <!-- EDIT: write your own one-liner here -->
+        <p class="lead">A full-stack developer crafting fast, polished experiences for the web. This is where my code, projects and ideas live — have a look around.</p>
+        <div class="hero-cta">
+          <a href="projects.html" class="btn btn-primary">View my work</a>
+          <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <!-- EDIT: swap these numbers for your real stats -->
+        <div class="hero-stats">
+          <div class="stat"><b>3+</b><span>Years of code</span></div>
+          <div class="stat"><b>12+</b><span>Projects shipped</span></div>
+          <div class="stat"><b>100%</b><span>Curiosity</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head row reveal">
+          <div>
+            <span class="kicker">Portfolio</span>
+            <h2>Featured projects</h2>
+            <p>A few things I've designed, built and shipped recently.</p>
+          </div>
+          <a href="projects.html" class="view-all">View all projects →</a>
+        </div>
+        <div class="card-grid">
+          <article class="card project-card reveal">
+            <div class="project-thumb t1">A</div>
+            <h3>Aurora Dashboard</h3>
+            <p>A real-time analytics dashboard with animated charts, dark mode and a clean component system.</p>
+            <div class="chip-row"><span class="chip">React</span><span class="chip">Chart.js</span><span class="chip">CSS</span></div>
+            <div class="project-links"><!-- EDIT: add your repo/demo links --><a href="#">GitHub ↗</a><a href="#">Live demo ↗</a></div>
+          </article>
+          <article class="card project-card reveal">
+            <div class="project-thumb t2">T</div>
+            <h3>TaskFlow</h3>
+            <p>A kanban-style task manager with drag-and-drop, local storage sync and keyboard shortcuts.</p>
+            <div class="chip-row"><span class="chip">JavaScript</span><span class="chip">LocalStorage</span></div>
+            <div class="project-links"><a href="#">GitHub ↗</a><a href="#">Live demo ↗</a></div>
+          </article>
+          <article class="card project-card reveal">
+            <div class="project-thumb t4">F</div>
+            <h3>API Forge</h3>
+            <p>A CLI that scaffolds production-ready REST APIs with auth, validation and tests in seconds.</p>
+            <div class="chip-row"><span class="chip">Node.js</span><span class="chip">CLI</span></div>
+            <div class="project-links"><a href="#">GitHub ↗</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LATEST POSTS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head row reveal">
+          <div>
+            <span class="kicker">Blog</span>
+            <h2>Latest from the blog</h2>
+            <p>Notes, lessons and things I wish I knew earlier.</p>
+          </div>
+          <a href="blog.html" class="view-all">Read the blog →</a>
+        </div>
+        <div class="card-grid">
+          <article class="card post-card reveal">
+            <div class="post-meta"><span>Sep 14, 2026</span><span class="dot">•</span><span>6 min read</span></div>
+            <h3>How I Built This Portfolio (and What I'd Do Differently)</h3>
+            <p>From a blank folder to a live GitHub Pages site — the stack, the design calls and the mistakes worth repeating.</p>
+            <a href="blog.html" class="read-more">Read more →</a>
+          </article>
+          <article class="card post-card reveal">
+            <div class="post-meta"><span>Aug 30, 2026</span><span class="dot">•</span><span>4 min read</span></div>
+            <h3>5 CSS Tricks That Instantly Make a Site Look Modern</h3>
+            <p>Gradients, glass, motion and three more small details that add up to a big visual upgrade.</p>
+            <a href="blog.html" class="read-more">Read more →</a>
+          </article>
+          <article class="card post-card reveal">
+            <div class="post-meta"><span>Aug 2, 2026</span><span class="dot">•</span><span>5 min read</span></div>
+            <h3>From Idea to Deploy: My 2026 Workflow</h3>
+            <p>The tools and habits that take a project from a text file to a live URL without losing momentum.</p>
+            <a href="blog.html" class="read-more">Read more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-card reveal">
+          <h2>Have an idea? Let's build it together.</h2>
+          <p>I'm open to freelance work, collaborations and interesting problems. If it lives on the web, I'd love to hear about it.</p>
+          <a href="contact.html" class="btn btn-primary">Say hello</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Koome Onesmus. Built with HTML, CSS &amp; a little JavaScript.</p>
+      <!-- EDIT: replace # with your real profile links -->
+      <div class="socials">
+        <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.75.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1 0 1.52-.01 2.74-.01 3.11 0 .3.2.67.8.55C20.21 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.43v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+        <a href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93z"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
